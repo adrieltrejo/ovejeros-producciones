@@ -1,0 +1,10 @@
+Página	Archivo	Carpeta Destino	Tamaño Recomendado	Formato	Descripción (Instrucciones para Producción)
+Inicio	card-marketing-v2.jpg	public/images/inicio/	900 x 1200 px (Vertical 3:4)	JPG / WebP	Foto creativa/estratégica (ej. alguien diseñando en su Mac, equipo revisando un moodboard o laptop). Debe verse corporativa pero moderna.
+Inicio	card-eventos.jpg	public/images/inicio/	900 x 1200 px (Vertical 3:4)	JPG / WebP	Foto que transmita vibra de cobertura en vivo (ej. lente de cámara capturando a mucha gente, luces de concierto, evento social elegante).
+Nosotros	equipo_ovejeros.png	public/images/nosotros/	1920 x 1080 px (Libre)	PNG (Sin fondo obligatorio)	Foto del equipo o fundadores RECORTADA, sin absolutamente nada de fondo (transparente). Es vital porque se sobrepondrá en el diseño oscuro.
+Servicios	poster_produccion.jpg	public/images/	1920 x 1080 px (Horizontal 16:9)	JPG / WebP	Imagen cinematográfica épica (ej. un set de grabación, luces pro, un lente de cámara imponente). Va de fondo de pantalla gigante.
+Servicios	poster_marketing.jpg	public/images/	1920 x 1080 px (Horizontal 16:9)	JPG / WebP	Imagen estética sobre branding/creación (ej. un bodegón publicitario, manos trabajando en una tablet o escritorio estético oscuro).
+Servicios	poster_eventos.jpg	public/images/	1920 x 1080 px (Horizontal 16:9)	JPG / WebP	Plano muy abierto o espectacular de un evento grande (concierto, boda de lujo o corporativo masivo).
+Portafolio	proceso_produccion.jpg	public/images/portafolio/	1080 x 1350 px (Vertical u Horizontal)	JPG / WebP	Foto "Detrás de cámaras" en acción (el equipo operando cámaras, luces, claquetas). Que se note el profesionalismo del rodaje.
+Portafolio	proceso_post.jpg	public/images/portafolio/	1080 x 1350 px (Vertical u Horizontal)	JPG / WebP	Foto "Detrás de cámaras" pero de edición (ej. monitores encendidos con Premiere/DaVinci, alguien editando en un estudio oscuro).
+Contacto	fondo_contacto.jpg	public/images/	1920 x 1080 px (Horizontal 16:9)	JPG / WebP	Imagen estética y limpia (ej. equipo de cámara posado sobre una mesa oscura, o textura elegante). Va muy oscurecida y en blanco y negro detrás del formulario.
