@@ -11,18 +11,11 @@ export default function Categoria_Deporte() {
       img: "/images/deporte/one-fit-center.jpg"
     },
     {
-      id: "one-fit-studio",
-      cliente: "One Fit Studio",
+      id: "excelencia-charra",
+      cliente: "Excelencia Charra",
       servicio: "Producción Audiovisual",
       anio: "2024",
-      img: "/images/deporte/one-fit-studio.jpg"
-    },
-    {
-      id: "prana-pilates",
-      cliente: "Prana Pilates",
-      servicio: "Producción Audiovisual",
-      anio: "2024",
-      img: "/images/deporte/prana-pilates-v2.jpg"
+      img: "/images/deporte/excelencia-charra.jpg"
     }
   ];
 

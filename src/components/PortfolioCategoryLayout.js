@@ -77,9 +77,10 @@ export default function PortfolioCategoryLayout({
           </div>
 
           {clients.map((cliente, idx) => (
-            <div
+            <Link
+              href={`/portafolio/${categoryKey}/${cliente.id}`}
               key={idx}
-              className="group grid grid-cols-[80px_1fr_1fr] md:grid-cols-[100px_1fr_1fr] gap-6 items-center border-b border-gray-800 py-6 md:py-10 transition-colors duration-300 cursor-default"
+              className="group grid grid-cols-[80px_1fr_1fr] md:grid-cols-[100px_1fr_1fr] gap-6 items-center border-b border-gray-800 py-6 md:py-10 transition-colors duration-300 cursor-pointer"
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -92,7 +93,7 @@ export default function PortfolioCategoryLayout({
               <div className="flex items-center justify-end gap-5 text-right font-poppins text-gray-500 group-hover:text-white text-xs md:text-base font-medium transition-colors">
                 <span>{cliente.servicio}</span>
               </div>
-            </div>
+            </Link>
           ))}
         </section>
 

@@ -5,7 +5,7 @@ export default function Categoria_Salud() {
   const clientesSalud = [
     {
       id: "calma-wellness",
-      cliente: "Calma Wellness",
+      cliente: "Calma Wellness Spa",
       servicio: "Producción Audiovisual",
       anio: "2024",
       img: "/images/salud/calma-wellness.jpg"
@@ -16,13 +16,6 @@ export default function Categoria_Salud() {
       servicio: "Producción Audiovisual",
       anio: "2024",
       img: "/images/salud/dr-herrera.jpg"
-    },
-    {
-      id: "lab-sta-maria",
-      cliente: "Lab. Sta. María",
-      servicio: "Producción Audiovisual",
-      anio: "2024",
-      img: "/images/salud/lab-sta-maria.jpg"
     },
     {
       id: "health-wellness",

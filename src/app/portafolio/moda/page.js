@@ -17,6 +17,13 @@ export default function Categoria_Moda() {
       servicio: "Producción Audiovisual",
       anio: "2024",
       img: "/images/moda/norvi-jeans.jpg"
+    },
+    {
+      id: "pasarela-ferrocarril",
+      cliente: "Pasarela Ferrocarril",
+      servicio: "Cobertura de Evento",
+      anio: "2024",
+      img: "/images/eventosocial/pasarela-ferrocarril.jpg"
     }
   ];
 

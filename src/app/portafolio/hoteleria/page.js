@@ -23,6 +23,13 @@ export default function Categoria_Hoteleria() {
       servicio: "Producción Audiovisual",
       anio: "2024",
       img: "/images/hoteleria/via-dorada.jpg"
+    },
+    {
+      id: "balloons-paradise-mx",
+      cliente: "Balloons Paradise Mx",
+      servicio: "Producción Audiovisual",
+      anio: "2024",
+      img: "/images/eventosocial/balloons-paradaise-mx.jpg"
     }
   ];
 
