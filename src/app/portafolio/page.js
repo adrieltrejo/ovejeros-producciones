@@ -145,7 +145,7 @@ export default function PortafolioInmersivo() {
                   <Image fill
                     src={categoria.img}
                     alt={categoria.visible}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                    className="absolute inset-0 w-full h-full object-cover object-top md:object-center transition-transform duration-[1200ms] group-hover:scale-110 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]"
                   />
 
                   {/* Overlays */}

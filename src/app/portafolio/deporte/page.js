@@ -11,11 +11,18 @@ export default function Categoria_Deporte() {
       img: "/images/deporte/one-fit-center.jpg"
     },
     {
+      id: "carreras",
+      cliente: "Carreras",
+      servicio: "Producción Audiovisual",
+      anio: "2024",
+      img: "/images/deporte/carreras.jpg"
+    },
+    {
       id: "excelencia-charra",
       cliente: "Excelencia Charra",
       servicio: "Producción Audiovisual",
       anio: "2024",
-      img: "/images/deporte/excelencia-charra.jpg"
+      img: "/images/eventosocial/lienzo-charro.jpg"
     }
   ];
 

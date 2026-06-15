@@ -8,7 +8,7 @@ export default function Nosotros() {
     {
       id: "estrategia",
       title: "ESTRATEGIA",
-      imgSrc: "/images/nosotros/estrategia-nosotros.jpg",
+      imgSrc: "/images/nosotros/estrategia-nosotros-v2.jpg",
       text: <>En <span className="text-white font-medium italic">Ovejeros Producciones</span> transformamos la visión de tu marca en conceptos audiovisuales con dirección, identidad y propósito. Analizamos lo que hace única a tu empresa para desarrollar ideas que conecten con tu audiencia y proyecten una imagen auténtica, moderna y memorable. Cada proyecto nace desde una estrategia creativa pensada para generar impacto real, no solo contenido visual.</>
     },
     {

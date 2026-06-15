@@ -25,11 +25,18 @@ export default function Categoria_Hoteleria() {
       img: "/images/hoteleria/via-dorada.jpg"
     },
     {
+      id: "casa-basalto",
+      cliente: "Casa Basalto",
+      servicio: "Producción Audiovisual",
+      anio: "2024",
+      img: "/images/hoteleria/casa-basalto.jpg"
+    },
+    {
       id: "balloons-paradise-mx",
       cliente: "Balloons Paradise Mx",
       servicio: "Producción Audiovisual",
       anio: "2024",
-      img: "/images/eventosocial/balloons-paradaise-mx.jpg"
+      img: "/images/hoteleria/balloons-paradise-mx.jpg"
     }
   ];
 

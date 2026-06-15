@@ -27,7 +27,7 @@ export default function InicioExacto() {
           <AnimateIn variant="fade-left" duration={0.5}>
             <div className="flex items-center gap-4 mb-8">
               <div className="h-[1px] w-12 bg-ovejeros-red" />
-              <span className="text-ovejeros-red font-poppins font-bold tracking-[0.3em] text-sm md:text-base font-bold uppercase">Productora Audiovisual</span>
+              <span className="text-white font-poppins font-bold tracking-[0.3em] text-sm md:text-base uppercase">Productora Audiovisual</span>
             </div>
           </AnimateIn>
 

@@ -149,6 +149,10 @@ export default function ClienteDetalle() {
                {data.videoLocal ? (
                  <video 
                    src={data.videoLocal} 
+                   autoPlay
+                   muted
+                   loop
+                   playsInline
                    controls
                    className="w-full h-full object-cover"
                  ></video>

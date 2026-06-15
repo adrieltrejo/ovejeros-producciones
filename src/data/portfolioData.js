@@ -132,7 +132,7 @@ export const portfolioData = {
     titulo2: "EL PROYECTO VISUAL",
     parrafo2: "A través de un video promocional, capturamos los momentos más representativos de cada vuelo, transmitiendo la sensación de libertad y asombro que convierte esta experiencia en un recuerdo único para sus visitantes.",
     videoLocal: "/videos/globos.mp4",
-    img: "/images/eventosocial/balloons-paradaise-mx.jpg"
+    img: "/images/hoteleria/balloons-paradise-mx.jpg"
   },
   "carlos-ramirez": {
     nombre: "Carlos Ramírez",
@@ -141,5 +141,19 @@ export const portfolioData = {
     titulo2: "EL PROYECTO VISUAL",
     parrafo2: "Cada imagen fue desarrollada para proyectar una presencia visual fuerte, combinando técnica, creatividad y una dirección fotográfica profesional.",
     videoLocal: "/videos/carlos-ramirez.mp4"
+  },
+  "carreras": {
+    titulo1: "LA COBERTURA",
+    parrafo1: "A través de fotografía y video, realizamos la cobertura de carreras deportivas capturando los momentos más destacados de cada evento.",
+    titulo2: "EL PROYECTO VISUAL",
+    parrafo2: "Creamos contenido audiovisual que refleja la energía, el esfuerzo y la experiencia de los participantes, permitiendo proyectar y compartir la esencia de cada competencia.",
+    videoLocal: "/videos/carreras.mp4"
+  },
+  "casa-basalto": {
+    titulo1: "LA EXPERIENCIA",
+    parrafo1: "Casa Basalto ofrece una experiencia de hospedaje donde la comodidad, el diseño moderno y la calidad se unen para crear estancias memorables.",
+    titulo2: "LA PRODUCCIÓN",
+    parrafo2: "A través de un video promocional, capturamos la esencia del hotel y sus principales atributos, desarrollando contenido que inspira, genera interés y contribuye a la difusión de la marca.",
+    videoLocal: "/videos/casa-basalto.mp4"
   }
 };
