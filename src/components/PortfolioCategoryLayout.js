@@ -50,15 +50,15 @@ export default function PortfolioCategoryLayout({
       <div className="relative z-10">
 
         {/* HERO HEADER */}
-        <section className="relative w-full pt-48 px-6 md:px-16 flex flex-col lg:flex-row justify-between lg:items-end gap-10">
+        <section className="relative w-full pt-36 px-6 md:px-16 flex flex-col lg:flex-row justify-between lg:items-end gap-10">
           <AnimateIn variant="fade-up" duration={0.7}>
             <div className="flex flex-col items-start gap-1">
               <Link href="/portafolio" className="group flex items-center gap-2 text-gray-500 hover:text-white transition-colors mb-6">
                 <ArrowLeft className="w-5 h-5" />
                 <span className="font-poppins font-bold tracking-widest text-xs uppercase">Portafolio</span>
               </Link>
-              <h1 className="text-white text-5xl md:text-[80px] lg:text-[100px] leading-[1.1] font-poppins font-extrabold tracking-tight uppercase">
-                {titleLine1} <br /> <span className="text-gray-600">{titleLine2}</span>
+              <h1 className="text-white text-4xl md:text-[80px] lg:text-[100px] leading-[1.1] font-poppins font-extrabold tracking-tight uppercase break-words w-full">
+                {titleLine1} <br className="hidden md:block" /> <span className="text-gray-600 block md:inline mt-2 md:mt-0">{titleLine2}</span>
               </h1>
             </div>
           </AnimateIn>

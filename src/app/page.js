@@ -9,46 +9,58 @@ export default function InicioExacto() {
     <div className="min-h-screen bg-ovejeros-black font-poppins text-white overflow-x-hidden selection:bg-ovejeros-red selection:text-white">
 
       {/* ================= HERO SECTION ================= */}
-      <section className="relative z-10 w-full h-screen min-h-[700px] overflow-hidden bg-ovejeros-black flex flex-col justify-end pb-20">
+      <section className="relative z-10 w-full h-[100dvh] min-h-[600px] md:min-h-[700px] overflow-hidden bg-ovejeros-black flex flex-col justify-center md:justify-end pb-0 md:pb-20 pt-20 md:pt-0">
         <div className="absolute inset-0 w-full h-full z-0">
+          {/* Video Desktop (Oculto en celulares) */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover opacity-60"
+            className="hidden md:block w-full h-full object-cover opacity-60"
           >
             <source src="/videos/Hero.mp4" type="video/mp4" />
+          </video>
+
+          {/* Video Mobile Vertical (Oculto en PC) */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="block md:hidden w-full h-full object-cover opacity-60"
+          >
+            <source src="/videos/Hero-mobile.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-ovejeros-black via-ovejeros-black/40 to-transparent" />
         </div>
 
-        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col items-start text-left">
+        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col items-start text-left mt-10 md:mt-0">
           <AnimateIn variant="fade-left" duration={0.5}>
-            <div className="flex items-center gap-4 mb-8">
-              <div className="h-[1px] w-12 bg-ovejeros-red" />
-              <span className="text-white font-poppins font-bold tracking-[0.3em] text-sm md:text-base uppercase">Productora Audiovisual</span>
+            <div className="flex items-center gap-4 mb-4 md:mb-8">
+              <div className="h-[1px] w-8 md:w-12 bg-ovejeros-red" />
+              <span className="text-white font-poppins font-bold tracking-[0.3em] text-xs md:text-base uppercase">Productora Audiovisual</span>
             </div>
           </AnimateIn>
 
           <AnimateIn variant="fade-up" delay={0.15} duration={0.7}>
-            <h1 className="text-white text-4xl md:text-6xl lg:text-[80px] leading-[1.1] max-w-5xl mb-8 font-poppins font-extrabold tracking-tight">
+            <h1 className="text-white text-4xl md:text-6xl lg:text-[80px] leading-[1.1] max-w-5xl mb-4 md:mb-8 font-poppins font-extrabold tracking-tight">
               CREAMOS EXPERIENCIAS <br /> VISUALES QUE <span className="text-gray-500">INSPIRAN</span>
             </h1>
           </AnimateIn>
 
           <AnimateIn variant="fade-up" delay={0.3} duration={0.6}>
-            <p className="text-gray-400 font-poppins text-[16px] md:text-[20px] max-w-2xl mb-10 leading-relaxed font-light">
+            <p className="text-gray-400 font-poppins text-[14px] md:text-[20px] max-w-2xl mb-8 md:mb-10 leading-relaxed font-light">
               Generamos impacto y valor en cada proyecto, construyendo lazos a través de la creatividad, la innovación y soluciones cinematográficas de la más alta calidad.
             </p>
           </AnimateIn>
 
           <AnimateIn variant="fade-up" delay={0.45} duration={0.5}>
-            <div className="flex flex-wrap gap-6">
-              <Link href="/contacto" className="bg-ovejeros-red text-white px-10 py-4 rounded-full text-[13px] tracking-[0.2em] font-bold uppercase hover:bg-ovejeros-red-dark transition-colors font-poppins font-bold shadow-[0_10px_30px_rgba(227,30,36,0.3)]">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto">
+              <Link href="/contacto" className="bg-ovejeros-red text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-[11px] md:text-[13px] tracking-[0.15em] md:tracking-[0.2em] font-bold uppercase text-center hover:bg-ovejeros-red-dark transition-colors font-poppins shadow-[0_10px_30px_rgba(227,30,36,0.3)] w-full sm:w-auto">
                 COTIZAR PROYECTO
               </Link>
-              <Link href="/portafolio" className="bg-transparent text-white border border-white/30 px-10 py-4 rounded-full text-[13px] tracking-[0.2em] font-bold uppercase hover:bg-white hover:text-black transition-all font-poppins font-bold">
+              <Link href="/portafolio" className="bg-transparent text-white border border-white/30 px-6 md:px-10 py-3 md:py-4 rounded-full text-[11px] md:text-[13px] tracking-[0.15em] md:tracking-[0.2em] font-bold uppercase text-center hover:bg-white hover:text-black transition-all font-poppins w-full sm:w-auto">
                 VER PORTAFOLIO
               </Link>
             </div>
@@ -161,7 +173,7 @@ export default function InicioExacto() {
           </p>
         </AnimateIn>
         <AnimateIn variant="scale" delay={0.4}>
-          <Link href="/contacto" className="bg-ovejeros-red text-white px-14 py-5 rounded-full text-sm tracking-[0.2em] font-bold uppercase hover:bg-white hover:text-black transition-colors duration-300 font-poppins font-bold shadow-[0_10px_30px_rgba(227,30,36,0.3)]">
+          <Link href="/contacto" className="inline-block w-full md:w-auto bg-ovejeros-red text-white px-6 md:px-14 py-4 md:py-5 rounded-full text-xs md:text-sm tracking-[0.1em] md:tracking-[0.2em] font-bold uppercase hover:bg-white hover:text-black transition-colors duration-300 font-poppins shadow-[0_10px_30px_rgba(227,30,36,0.3)]">
             INICIAR CONVERSACIÓN
           </Link>
         </AnimateIn>

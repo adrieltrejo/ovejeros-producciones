@@ -91,7 +91,7 @@ export default function Servicios() {
     <div className="bg-black font-poppins text-white flex flex-col min-h-screen selection:bg-[#E31E24] selection:text-white">
 
       {/* HERO SLIDER SECTION CON VIDEOS */}
-      <section className="relative w-full min-h-screen flex flex-col justify-end pb-16 pt-32 overflow-hidden bg-[#050505]">
+      <section className="relative w-full min-h-[100dvh] flex flex-col justify-center md:justify-end pb-24 md:pb-16 pt-24 md:pt-32 overflow-hidden bg-[#050505]">
 
         {/* CAPA 0: FONDOS DINÁMICOS */}
         {services.map((srv, idx) => (

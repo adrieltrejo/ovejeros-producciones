@@ -83,19 +83,19 @@ export default function Contacto() {
     <div className="min-h-screen bg-black font-poppins text-white overflow-x-hidden relative flex flex-col">
 
       {/* ================= HERO / CONTACTO SECTION ================= */}
-      <section className="relative w-full min-h-screen flex flex-col justify-center pt-32 pb-16 px-6 md:px-12 overflow-hidden">
+      <section className="relative w-full min-h-[100dvh] flex flex-col justify-center pt-28 md:pt-32 pb-24 md:pb-16 px-6 md:px-12 overflow-hidden">
 
         <div className="absolute inset-0 z-0">
           {/* TODO: Reemplazar con imagen real de contacto */}
           <Image fill
             src="/images/fondo_contacto.jpg"
-            className="w-full h-full object-cover opacity-30 grayscale"
+            className="w-full h-full object-cover opacity-40 md:opacity-40 grayscale"
             alt="Fondo contacto"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
         </div>
 
-        <div className="relative z-10 w-full flex flex-col lg:flex-row gap-16 justify-between items-center max-w-[1400px] mx-auto">
+        <div className="relative z-10 w-full flex flex-col lg:flex-row gap-12 md:gap-16 justify-between items-center max-w-[1400px] mx-auto">
 
           {/* LADO IZQUIERDO: Textos */}
           <AnimateIn variant="fade-right" className="w-full lg:w-1/2 flex flex-col gap-8 text-center lg:text-left">
@@ -130,7 +130,7 @@ export default function Contacto() {
           </AnimateIn>
 
           {/* LADO DERECHO: Formulario */}
-          <AnimateIn variant="fade-left" delay={0.2} className="w-full lg:w-1/2 max-w-[450px] lg:ml-auto bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-[32px] shadow-2xl">
+          <AnimateIn variant="fade-left" delay={0.2} className="w-full lg:w-1/2 max-w-[450px] mx-auto lg:ml-auto bg-white/5 backdrop-blur-md border border-white/10 p-6 md:p-8 rounded-[32px] shadow-2xl">
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">
               <div className="flex flex-col gap-1.5">
                 <label htmlFor="nombre" className="text-[10px] uppercase tracking-widest font-bold ml-4 opacity-60">Nombre / Empresa</label>

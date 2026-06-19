@@ -35,28 +35,45 @@ export default function Nosotros() {
       </div>
 
       {/* 1. HERO TITLE */}
-      <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center pt-32">
-        <div className="fixed top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none z-0 opacity-20 md:opacity-40">
-          <AnimateIn variant="fade-up" duration={1}>
-            <h1 className="text-[60px] md:text-[120px] lg:text-[150px] font-poppins font-extrabold text-white leading-[1.1] tracking-tight drop-shadow-2xl">
-              NUESTRO<br />ENFOQUE
-            </h1>
+      <section className="relative w-full min-h-0 md:min-h-[90vh] flex flex-col items-center justify-start md:justify-center px-6 pt-36 pb-16 md:pb-0 md:pt-32 z-10">
+
+        {/* Contenido Real (Frente) */}
+        <div className="relative z-10 max-w-4xl text-center md:text-center flex flex-col items-center md:items-center mt-0">
+          <AnimateIn variant="fade-up" delay={0.1}>
+            <div className="flex items-center gap-4 mb-6 md:mb-8">
+              <div className="h-[1px] w-8 md:w-16 bg-ovejeros-red" />
+              <span className="text-ovejeros-red font-poppins font-bold tracking-[0.3em] text-[10px] md:text-sm uppercase">Quiénes Somos</span>
+              <div className="h-[1px] w-8 md:w-16 bg-ovejeros-red" />
+            </div>
+          </AnimateIn>
+          
+          <AnimateIn variant="fade-up" delay={0.2}>
+            <h2 className="text-3xl md:text-5xl lg:text-7xl font-poppins font-extrabold text-white leading-[1.1] tracking-tight mb-6 md:mb-10">
+              MÁS QUE UNA PRODUCTORA, <br className="hidden md:block" /> 
+              <span className="text-gray-500">SOMOS TU ALIADO VISUAL</span>
+            </h2>
+          </AnimateIn>
+
+          <AnimateIn variant="fade-up" delay={0.3}>
+            <p className="text-gray-400 font-poppins text-sm md:text-xl leading-relaxed max-w-2xl font-light">
+              No nos conformamos con grabar videos bonitos que nadie recuerda. Creemos en producir piezas cinematográficas con alma, dirección estratégica y un propósito claro: hacer destacar a tu marca.
+            </p>
           </AnimateIn>
         </div>
       </section>
 
       {/* SECCIONES APILADAS (Stacked Cards) */}
-      <section className="relative z-20 w-full pb-40 px-4 md:px-10 max-w-[1400px] mx-auto">
+      <section className="relative z-20 w-full pb-40 px-4 md:px-10 max-w-[1400px] mx-auto mt-0 md:mt-12">
         <div className="flex flex-col gap-8 md:gap-16">
 
           {secciones.map((sec, idx) => (
             <div
               key={sec.id}
-              // El secreto del efecto: sticky y top dinámico para que se apilen visualmente
-              className="sticky w-full min-h-[600px] border border-white/10 rounded-[40px] bg-[#080808] shadow-[0_-10px_40px_rgba(0,0,0,0.5)] overflow-hidden"
-              style={{ top: `calc(100px + ${idx * 40}px)` }}
+              // En celular es relativo (scroll normal) para evitar que el texto se corte. En compu es sticky.
+              className="relative md:sticky w-full min-h-[600px] border border-white/10 rounded-[32px] md:rounded-[40px] bg-[#080808] shadow-[0_-10px_40px_rgba(0,0,0,0.5)] overflow-hidden md:[top:var(--sticky-top)]"
+              style={{ "--sticky-top": `calc(100px + ${idx * 40}px)` }}
             >
-              <div className="flex flex-col lg:flex-row w-full h-full p-8 md:p-16 gap-10 lg:gap-20">
+              <div className="flex flex-col lg:flex-row w-full h-full p-6 md:p-16 gap-8 lg:gap-20">
 
                 {/* Lado Izquierdo: Imagen Placeholder */}
                 <div className="w-full lg:w-1/2 h-[300px] lg:h-auto rounded-[24px] border border-white/5 bg-[#151515] flex items-center justify-center overflow-hidden relative shadow-inner">
