@@ -46,10 +46,10 @@ export default function Nosotros() {
               <div className="h-[1px] w-8 md:w-16 bg-ovejeros-red" />
             </div>
           </AnimateIn>
-          
+
           <AnimateIn variant="fade-up" delay={0.2}>
             <h2 className="text-3xl md:text-5xl lg:text-7xl font-poppins font-extrabold text-white leading-[1.1] tracking-tight mb-6 md:mb-10">
-              MÁS QUE UNA PRODUCTORA, <br className="hidden md:block" /> 
+              MÁS QUE UNA PRODUCTORA, <br className="hidden md:block" />
               <span className="text-gray-500">SOMOS TU ALIADO VISUAL</span>
             </h2>
           </AnimateIn>

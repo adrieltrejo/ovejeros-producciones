@@ -105,15 +105,6 @@ export default function Navbar() {
             {link.label}
           </Link>
         ))}
-
-        <div className="mt-auto mb-10 pt-8 border-t border-white/10">
-          <Link
-            href="/contacto"
-            className="block w-full text-center bg-ovejeros-red text-white py-3.5 rounded-full text-xs tracking-[0.2em] font-bold uppercase font-poppins font-bold shadow-[0_10px_30px_rgba(227,30,36,0.3)] hover:bg-ovejeros-red-dark transition-colors"
-          >
-            COTIZAR PROYECTO
-          </Link>
-        </div>
       </div>
     </>
   );

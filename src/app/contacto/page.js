@@ -98,19 +98,20 @@ export default function Contacto() {
         <div className="relative z-10 w-full flex flex-col lg:flex-row gap-12 md:gap-16 justify-between items-center max-w-[1400px] mx-auto">
 
           {/* LADO IZQUIERDO: Textos */}
-          <AnimateIn variant="fade-right" className="w-full lg:w-1/2 flex flex-col gap-8 text-center lg:text-left">
+          <AnimateIn variant="fade-right" className="w-full lg:w-1/2 flex flex-col gap-4 md:gap-8 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-[70px] font-poppins font-extrabold tracking-tight leading-[1.1]">
               HABLEMOS <br /> <span className="text-ovejeros-red">DE TU PROYECTO</span>
             </h1>
 
-            <div className="flex flex-col gap-6 mt-4">
+            <div className="flex flex-col gap-4 md:gap-6 mt-2 md:mt-4">
               <div className="flex flex-col gap-1">
                 <span className="text-ovejeros-red font-bold tracking-widest text-xs uppercase">Teléfono</span>
                 <p className="text-lg md:text-xl font-poppins font-extrabold tracking-wider">771 111 8767</p>
               </div>
               <div className="flex flex-col gap-1">
                 <span className="text-ovejeros-red font-bold tracking-widest text-xs uppercase">Correo</span>
-                <p className="text-lg md:text-xl font-poppins font-extrabold tracking-wider">OVEJEROSPRODUCCIONES@GMAIL.COM</p>
+                {/* Reducción de tamaño en móvil (text-sm a text-base) para evitar cortes */}
+                <p className="text-[13px] sm:text-base md:text-xl font-poppins font-extrabold tracking-normal md:tracking-wider">OVEJEROSPRODUCCIONES@GMAIL.COM</p>
               </div>
 
               {/* Botón de Google Maps */}
