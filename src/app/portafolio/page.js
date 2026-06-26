@@ -139,26 +139,27 @@ export default function PortafolioInmersivo() {
               >
                 <Link
                   href={`/portafolio/${categoria.id}`}
-                  className="group relative overflow-hidden rounded-[24px] md:rounded-[32px] block shadow-2xl ring-1 ring-white/5 hover:ring-white/20 transition-all duration-700 h-[280px] md:h-[360px]"
+                  prefetch={false}
+                  className="group relative overflow-hidden rounded-[24px] md:rounded-[32px] block shadow-2xl ring-1 ring-white/5 hover:ring-white/20 transition-all duration-700 h-[280px] md:h-[360px] transform-gpu"
                 >
                   {/* Background Image */}
                   <Image fill
                     src={categoria.img}
                     alt={categoria.visible}
-                    className="absolute inset-0 w-full h-full object-cover object-top md:object-center transition-transform duration-[1200ms] md:group-hover:scale-110 grayscale-0 opacity-100 md:grayscale md:opacity-60 md:group-hover:grayscale-0 md:group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                    className="absolute inset-0 w-full h-full object-cover object-top md:object-center transition-all duration-[1200ms] transform-gpu will-change-transform will-change-filter md:group-hover:scale-110 grayscale-0 opacity-100 md:grayscale md:opacity-60 md:group-hover:grayscale-0 md:group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]"
                   />
 
                   {/* Overlays */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-700 pointer-events-none" />
 
                   {/* Content */}
-                  <div className="absolute inset-0 flex flex-col justify-end p-8">
-                    <h3 className="text-white font-poppins font-extrabold text-2xl md:text-3xl lg:text-4xl leading-[1.1] uppercase drop-shadow-2xl translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] break-words">
+                  <div className="absolute inset-0 flex flex-col justify-end p-8 pointer-events-none">
+                    <h3 className="text-white font-poppins font-extrabold text-2xl md:text-3xl lg:text-4xl leading-[1.1] uppercase drop-shadow-2xl translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] break-words transform-gpu">
                       {categoria.visible}
                     </h3>
 
                     <div className="overflow-hidden mt-1 md:mt-2">
-                      <span className="inline-flex items-center gap-2 text-ovejeros-red font-poppins font-bold tracking-[0.2em] text-xs uppercase opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100 ease-out">
+                      <span className="inline-flex items-center gap-2 text-ovejeros-red font-poppins font-bold tracking-[0.2em] text-xs uppercase opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100 ease-out transform-gpu">
                         Explorar Proyectos <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </span>
                     </div>
