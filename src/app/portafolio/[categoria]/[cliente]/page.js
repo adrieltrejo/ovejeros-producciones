@@ -121,14 +121,8 @@ export default function ClienteDetalle() {
             <div className="relative w-full md:w-auto rounded-none md:rounded-[40px] overflow-hidden group border-y md:border border-white/5 shadow-2xl md:shadow-[0_40px_80px_rgba(0,0,0,0.8)] bg-[#050505]">
 
               {data.videoLocal ? (
-                <div className="relative w-full aspect-[9/16] md:aspect-video md:max-h-[85vh] overflow-hidden bg-black flex justify-center items-center group-hover:scale-[1.01] transition-transform duration-700">
-                  {/* Fondo Estático Difuminado (Efecto TikTok/Cine) */}
-                  <Image fill
-                    src={heroImage}
-                    alt="Efecto de fondo"
-                    className="absolute inset-0 w-full h-full object-cover blur-3xl opacity-40 scale-150 z-0 pointer-events-none"
-                  />
-                  {/* Video Intacto Sin Recortes */}
+                <div className="relative w-full overflow-hidden bg-black flex justify-center items-center group-hover:scale-[1.01] transition-transform duration-700">
+                  {/* Video Intacto Sin Recortes ni Rellenos (Fluye Naturalmente) */}
                   <video
                     src={data.videoLocal}
                     autoPlay
@@ -136,7 +130,7 @@ export default function ClienteDetalle() {
                     loop
                     playsInline
                     controls
-                    className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,0,0,0.5)]"
+                    className="relative z-10 w-full h-auto block drop-shadow-[0_0_50px_rgba(0,0,0,0.5)]"
                   ></video>
                 </div>
               ) : (
