@@ -27,7 +27,6 @@ export default function Servicios() {
   const services = [
     {
       title: "PRODUCCIÓN\nAUDIOVISUAL",
-      video: "/videos/video.mp4",
       poster: "/images/poster_produccion.jpg",
       sub: [
         {
@@ -49,7 +48,6 @@ export default function Servicios() {
     },
     {
       title: "MARKETING",
-      video: "/videos/video.mp4",
       poster: "/images/poster_marketing.jpg",
       sub: [
         { icon: "fa-briefcase", title: "BRANDING", text: "Creamos la identidad visual de tu marca o la renovamos estratégicamente. Incluye: logo, paleta de colores, tipografías, estilo visual, tono de comunicación y lineamientos de uso para asegurar coherencia." },
@@ -62,7 +60,6 @@ export default function Servicios() {
     },
     {
       title: "COBERTURA DE\nEVENTOS",
-      video: "/videos/video.mp4",
       poster: "/images/poster_eventos.jpg",
       sub: [
         {
