@@ -99,6 +99,7 @@ export default function InicioExacto() {
                 <Image fill
                   src="/images/inicio/card-produccion-v2.jpg"
                   alt="Producción Audiovisual"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
@@ -119,6 +120,7 @@ export default function InicioExacto() {
                 <Image fill
                   src="/images/inicio/card-marketing-v2.jpg"
                   alt="Marketing Estratégico"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
@@ -139,6 +141,7 @@ export default function InicioExacto() {
                 <Image fill
                   src="/images/inicio/card-eventos.jpg"
                   alt="Cobertura de Eventos"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />

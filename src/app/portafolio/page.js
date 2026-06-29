@@ -146,6 +146,7 @@ export default function PortafolioInmersivo() {
                   <Image fill
                     src={categoria.img}
                     alt={categoria.visible}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="absolute inset-0 w-full h-full object-cover object-top md:object-center transition-all duration-[1200ms] transform-gpu will-change-transform will-change-filter md:group-hover:scale-110 grayscale-0 opacity-100 md:grayscale md:opacity-60 md:group-hover:grayscale-0 md:group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]"
                   />
 
